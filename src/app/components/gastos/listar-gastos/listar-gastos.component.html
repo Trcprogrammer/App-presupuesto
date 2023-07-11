@@ -1,0 +1,34 @@
+<div class="row"    >
+    <div class="col-lg-6">
+      <div class="alert alert-success">
+        Presupuesto:
+        <strong>
+          ${{cantidad}}
+        </strong>
+      </div>
+    </div>
+    <div class="col-lg-6" >
+      <div class="alert alert-danger">
+        Restante:
+        <strong   >
+          ${{restante}}
+        </strong>
+
+      </div>
+
+    </div>
+
+</div>
+ <div class="row">
+  <div class="col-12">
+    <ul>
+      <li  *ngFor="let i of almacenar" class="d-flex justify-content-between"   >
+       <strong>{{i.gasto}} </strong> 
+        <span class="badge bg-danger rounded-pill fs-5 " >
+        ${{i.cantidad}}
+
+        </span>
+  </li>
+  </ul>
+  </div>
+ </div>

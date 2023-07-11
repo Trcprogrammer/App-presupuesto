@@ -1,0 +1,13 @@
+    <h3 class="card-title text-center ">Ingresar gasto</h3>
+    <hr>
+    <div class="text-center">
+       <span class="badge bg-danger fs-4" *ngIf=" textoIncorrecto === true"  >El formulario esta incorrecto</span>
+    </div>
+  <label for="gasto">Gasto</label>
+  <input class="form-control"  type="text"  [(ngModel)]="gasto"  placeholder="Ej: Comida"  id="gasto" >
+  <label for="cantidad">Cantidad</label>
+  <input class="form-control"  type="number"     [(ngModel)]="cantidad"   placeholder="Ej: 600"  id="cantidad" >
+  <div class="text-center" >
+    <button type="button" class="btn btn-success  w-75 mt-3 " (click)="agregarGastos()" >Agregar gasto</button>
+
+  </div>

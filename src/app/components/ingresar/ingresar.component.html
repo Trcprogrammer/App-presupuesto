@@ -1,0 +1,19 @@
+
+
+<div class="container" >
+
+<div class="row">
+    <div class="col-lg-12  d-flex justify-content-center align-items-center vh-100 ">
+        
+<div class="w-50" >
+  
+    <h1 class="text-center  fw-bold text-light  " >Ingresa cantidad</h1>
+    <h2    class="text-center"   *ngIf=" validar ===true " > <span class="badge bg-warning " >La cantidad debe ser mayor a mil</span> </h2>
+
+        <input  class="form-control text-center w-100  form-control-lg my-3 "  [(ngModel)]="cantidad"  type="number"  placeholder="Ingresar dinero" >
+        <button   class=" btn btn-success w-100  btn-lg"   (click)="enviar()"   >Hacer Presupuesto</button>
+    </div>
+
+    </div>
+</div>
+</div>
